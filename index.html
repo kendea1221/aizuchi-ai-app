@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Aizuchi AI Kendea-SPCEdtion</title>
+</head>
+<body>
+    <div class="container">
+        <div class="notification">
+            <progress class="progress is-danger" id="progress" value="0" max="0"></progress>
+            <div class="columns">
+                <div class="column block has-text-centered">
+                    <h1 class="title is-2" id="talking">会話未検出</h1>
+                </div>
+                <div class="colum block has-text-centered">
+                    <div class="control">
+                        <label class="label">検出感度</label>
+                        <div class="select">
+                            <select id="select">
+                                <option value="7500">高</option>
+                                <option value="10000" selected>標準</option>
+                                <option value="15000">低</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block has-text-centered">
+            <h1 class="title is-1 has-text-denger" id="message"></h1>
+            <figure class="image">
+                <img src="./img/pengin.png" alt="">
+            </figure>
+            <script src="./js/audioManager.js"></script>
+            <script src="./js/index.js"></script>
+        </div>
+    </div>
+</body>
+</html>
